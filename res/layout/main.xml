@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:longClickable="false">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="0.3">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_players"
+                android:textSize="16dp"
+                android:id="@+id/textView3"
+                android:layout_gravity="left|center_vertical"
+                android:visibility="visible"
+                android:layout_marginLeft="5dp"/>
+        <ListView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/listView"
+                android:layout_gravity="center_horizontal|top"
+                />
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+        <Button
+                android:layout_width="94dp"
+                android:layout_height="wrap_content"
+                android:text="@string/button_check"
+                android:id="@+id/button"
+                android:layout_gravity="center"
+                android:onClick="onButtonClick"/>
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/text_host"
+                      android:id="@+id/textView1"
+                      android:layout_gravity="left|top"
+                      android:layout_marginLeft="5dp"/>
+            <EditText android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/editText"
+                      android:layout_gravity="left|bottom"
+                      android:inputType="text"
+                      android:freezesText="true"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/text_port"
+                      android:id="@+id/textView2"
+                      android:layout_gravity="left|top"
+                      android:layout_marginRight="5dp"/>
+            <EditText android:layout_width="84dp"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/editText1"
+                      android:layout_gravity="bottom|left"
+                      android:inputType="numberDecimal"
+                      android:text="@string/text_defaultport"
+                      android:freezesText="true"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+

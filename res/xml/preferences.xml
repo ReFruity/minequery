@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+            android:title="@string/pref_general_title"
+            android:key="pref_key_general">
+        <CheckBoxPreference
+            android:key="pref_keepScreenOn"
+            android:title="@string/pref_keepScreenOnTitle"
+            android:defaultValue="false"/>
+    </PreferenceCategory>
+</PreferenceScreen>
